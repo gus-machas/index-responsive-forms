@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form2.css">
+</head>
+<body>
+    <div class="page"> 
+        <header>
+            <h1>Avalie sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./images/start_rank.svg" alt="Balão de ranking com estrelas" />
+            <h2>Informações Pessoais</h2>
+        </header>
+
+        <main>
+            <form action="./index.html" id="avaliacaoMentoriaForm">
+                <fieldset>
+                    <div class="col2">
+                        <div class="input-wrapper">
+                            <label for="inputNome">Nome</label>
+                            <input required type="text" name="name" id="inputNome" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="inputSobrenome">Sobrenome</label>
+                            <input required type="text" name="sobrenome" id="inputSobrenome" />
+                        </div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="inputEmail">E-mail<span>(digite um email válido)</span></label>
+                        <input type="email" required name="email" id="inputEmail" />
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Informações do mentor</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="inputMentor">Selecione quem foi seu mentor</label>
+                        <select required name="mentor" id="inputMentor" >
+                            <option value="Gustavo de Lima Machado">Gustavo de Lima Machado</option>
+                            <option value="Bruna Lorenzzetti de Oliveira">Bruna Lorenzzetti de Oliveira</option>
+                        </select>
+                    </div> 
+
+                    <div class="input-wrapper">
+                        <label for="inputFeedback">Feedback</label>
+                        <texarea rows="4" name="feedback" id="inputFeedback"></texarea>
+                    </div> 
+
+                    <div class="checkbox-wrapper">
+                        <input name="duvidas" type="checkbox" id="doubts">
+                        <label for="doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agendando próxima mentoria</legend>
+
+                    <div class="col3">
+                        <div class="input-wrapper">
+                            <label for="inputData1">Data<span>(DD/MM/AAAA)</span></label>
+                            <input required type="date" name="data1" id="inputData1" />
+                        </div> 
+                        <div class="input-wrapper">
+                            <label for="inputDataBegin1">Das</label>
+                            <input required type="time" name="dataBegin1" id="inputDataBegin1" />
+                        </div> 
+                        <div class="input-wrapper">
+                            <label for="inputDataEnd1">Até</label>
+                            <input required type="time" name="dataEnd1" id="inputDataEnd1" />
+                        </div> 
+                    </div>
+                </fieldset>
+
+                <div class="page-button">
+                    <button form="avaliacaoMentoriaForm" type="submit">Salvar</button>
+                </div>
+            </form>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
