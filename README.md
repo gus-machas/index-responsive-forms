@@ -7,7 +7,9 @@ This project is an amalgamation of a class challenge plus some improvements cons
 It consists in 3 pages:
 
 Index.html: considered the main/initial page of the application, there's a navigation for the other pages here.
+
 Form1.html: the first form. Used to request a new mentorship.
+
 Form2.html: the second first. Used to evaluate a mentorship.
 
 The responsiveness is made using @media in the css files, by visualizing the effects of different screen sizes.
