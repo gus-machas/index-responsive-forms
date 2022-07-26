@@ -12,6 +12,8 @@ Form1.html: the first form. Used to request a new mentorship.
 
 Form2.html: the second first. Used to evaluate a mentorship.
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 The responsiveness is made using @media in the css files, by visualizing the effects of different screen sizes.
 
 Consider that every page has 2 different files, with style.css present in all of them, sharing the :root properties. 
